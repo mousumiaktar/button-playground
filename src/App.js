@@ -33,14 +33,14 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='container mx-auto'>
       <div className='flex justify-center items-center h-screen'>
-        <div className={`h-[50px] w-[50px] rounded-full bg-green-700 relative  ${topButton && "mb-[150px] duration-100"} ${bottomButton && "mt-[150px] duration-100"} ${leftButton && "mr-[150px] duration-100"} ${rightButton && "ml-[150px] duration-100"}`}>
+        <div className={`h-[50px] w-[50px] rounded-full bg-red-700 relative  ${topButton && "mb-[150px] duration-100"} ${bottomButton && "mt-[150px] duration-100"} ${leftButton && "mr-[150px] duration-100"} ${rightButton && "ml-[150px] duration-100"}`}>
         </div>
-        <button onClick={handleTop} className='bg-green-700 text-white absolute mb-[350px] mr-[10px]'>top</button>
-        <button onClick={handleBottom} className='bg-green-700 text-white absolute mt-[350px] mr-[10px]'>bottom</button>
-        <button onClick={handleLeft} className='bg-green-700 text-white absolute ml-[-350px] '>left</button>
-        <button onClick={handleRight} className='bg-green-700 text-white absolute ml-[350px]'>right</button>
+        <button onClick={handleTop} className='bg-green-700 px-3 rounded-md text-white absolute mb-[350px] mr-[10px]'>top</button>
+        <button onClick={handleBottom} className='bg-green-700 px-1 rounded-md text-white absolute mt-[350px] mr-[10px]'>bottom</button>
+        <button onClick={handleLeft} className='bg-green-700 px-4 rounded-md text-white absolute ml-[-350px]'>left</button>
+        <button onClick={handleRight} className='bg-green-700 px-3 rounded-md text-white absolute ml-[350px]'>right</button>
       </div>
 
     </div>
